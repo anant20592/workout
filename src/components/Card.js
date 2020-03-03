@@ -1,49 +1,44 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card'
 import CardDeck from 'react-bootstrap/CardDeck'
-import CardGroup from 'react-bootstrap/CardGroup'
 
 const CustomCard = () => {
     return (
-        <CardDeck>
+        <CardDeck style={{padding:"8%"}}>
             <Card>
-                <Card.Img variant="top" src="/logo192.png" />
+                <Card.Img variant="top" src="https://image.shutterstock.com/image-photo/side-view-muscular-couple-doing-600w-296937782.jpg" />
                 <Card.Body>
-                <Card.Title>Card title</Card.Title>
+                <Card.Title>Training Programs</Card.Title>
                 <Card.Text>
-                    This is a wider card with supporting text below as a natural lead-in to
-                    additional content. This content is a little bit longer.
+                    100+ health programs to choose.
                 </Card.Text>
                 </Card.Body>
                 <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
+                <small className="text-muted">Explore More</small>
                 </Card.Footer>
             </Card>
             <Card>
-                <Card.Img variant="top" src="/logo192.png" />
+                <Card.Img variant="top" src="https://images-na.ssl-images-amazon.com/images/I/71db7i95H8L._SX679_.jpg" />
                 <Card.Body>
-                <Card.Title>Card title</Card.Title>
+                <Card.Title>Gym Equipments</Card.Title>
                 <Card.Text>
-                    This card has supporting text below as a natural lead-in to additional
-                    content.{' '}
+                    Explore and buy best quality gym equipments at reasonble price.
                 </Card.Text>
                 </Card.Body>
                 <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
+                <small className="text-muted">Explore More</small>
                 </Card.Footer>
             </Card>
             <Card>
-                <Card.Img variant="top" src="/logo192.png" />
+                <Card.Img variant="top" src="https://www.plusfitness.co.in/media/images/Strength_1.2e16d0ba.fill-1000x600.jpg" />
                 <Card.Body>
-                <Card.Title>Card title</Card.Title>
+                <Card.Title>Best Gyms in NCR</Card.Title>
                 <Card.Text>
-                    This is a wider card with supporting text below as a natural lead-in to
-                    additional content. This card has even longer content than the first to
-                    show that equal height action.
+                    Explore the most reputed gyms across Delhi NCR.
                 </Card.Text>
                 </Card.Body>
                 <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
+                <small className="text-muted">Explore More</small>
                 </Card.Footer>
             </Card>
         </CardDeck>

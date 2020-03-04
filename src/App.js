@@ -7,19 +7,29 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Layout from './components/Layout';
 import { BrowserRouter as Router, Route, Switch ,Link } from "react-router-dom";
 import GymList from './components/gymList';
+import ShoppingCart from './components/ShoppingCart';
+import Checkout from './components/checkout';
 
 function App() {
   return (
       <Layout>
         <Router>
-        <SpacingGrid>
-          <Link to="/">
-          <CustomCard></CustomCard>
-          </Link>
-          <Link to="list">
-            <GymList></GymList>
-          </Link>
-        </SpacingGrid>
+          <SpacingGrid>
+            <Switch>
+              <Route exact path="/">
+                <CustomCard></CustomCard>
+              </Route>
+              <Route exact path="/list">
+                <GymList></GymList>
+              </Route>
+              <Route exact path="/cart">
+                <ShoppingCart></ShoppingCart>
+              </Route>
+              <Route exact path="/checkout">
+                <Checkout></Checkout>
+              </Route>
+            </Switch>
+          </SpacingGrid>
         </Router>
       </Layout>
   );

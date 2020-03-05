@@ -9,13 +9,17 @@ import { BrowserRouter as Router, Route, Switch ,Link } from "react-router-dom";
 import GymList from './components/gymList';
 import ShoppingCart from './components/ShoppingCart';
 import Checkout from './components/checkout';
+import Home from './home/home';
 
 function App() {
   return (
       <Layout>
         <Router>
           <SpacingGrid>
-            <Switch>
+            <Route exact path="/">
+                <Home></Home>
+            </Route>
+            {/* <Switch>
               <Route exact path="/">
                 <CustomCard></CustomCard>
               </Route>
@@ -28,7 +32,7 @@ function App() {
               <Route exact path="/checkout">
                 <Checkout></Checkout>
               </Route>
-            </Switch>
+            </Switch> */}
           </SpacingGrid>
         </Router>
       </Layout>

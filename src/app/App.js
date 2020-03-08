@@ -1,24 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
+import React , {Component} from 'react';
 import './App.css';
-import SpacingGrid from '../src/components/Grid'
-import CustomCard from './components/Card'
+import SpacingGrid from '../components/Grid'
+import CustomCard from '../components/Card'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Layout from './components/Layout';
+import Layout from '../components/Layout';
 import { BrowserRouter as Router, Route, Switch ,Link } from "react-router-dom";
-import GymList from './components/gymList';
-import ShoppingCart from './components/ShoppingCart';
-import Checkout from './components/checkout';
-import Home from './home/home';
+import GymList from '../components/gymList';
+import ShoppingCart from '../components/ShoppingCart';
+import Checkout from '../components/checkout';
+import Home from './home';
 
-function App() {
+class  App extends Component {
+  render() {
   return (
       <Layout>
         <Router>
           <SpacingGrid>
-            <Route exact path="/">
-                <Home></Home>
-            </Route>
+           <Route exact path='/' component={Home}/>
             {/* <Switch>
               <Route exact path="/">
                 <CustomCard></CustomCard>
@@ -37,6 +35,7 @@ function App() {
         </Router>
       </Layout>
   );
+}
 }
 
 export default App;

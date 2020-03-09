@@ -1,10 +1,6 @@
-import { createActions } from 'reduxsauce';
 
-const { Creators, Types } = createActions({
-  increment: ['value'],
-  decrement: ['value'],
-  requestSubredditJson: ['subreddit'],
-  receiveSubredditJson: ['subredditData']
+export const requestSubredditJson = (subreddit) => ({
+  type: "11",
+  data : []
 });
-
-export { Creators, Types };
+export default  requestSubredditJson ;

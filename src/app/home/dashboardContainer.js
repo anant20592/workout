@@ -9,7 +9,7 @@ const mapStateToProps = (state) => {
 }
 
 const mapDispatchToProps = (dispatch)=> {
-
+  return {name : "Anant"}
 }
 
 const DashboardContainer = connect(

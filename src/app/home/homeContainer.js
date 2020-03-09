@@ -1,21 +1,14 @@
 import { connect } from 'react-redux';
 import HomeComponent from './home';
-//import { homeOperations } from './duck';
+import {requestSubredditJson} from './dashboardActions'
 
 const mapStateToProps = state => {
-  const { currentCount } = state.home;
-  return { currentCount }
+  return { name :"Anant" }
 };
 
 const mapDispatchToProps = dispatch => {
-  // '1' is the number by which you want to increment the count
-//  const onIncrementClick = () => dispatch(homeOperations.increment(1));
-//  const onDecrementClick = () => dispatch(homeOperations.decrement(1));
-  
-  return {
-    // onIncrementClick,
-    // onDecrementClick
-  }
+  dispatch(requestSubredditJson())
+  return {name : "Anant"}
 };
 
 const HomeContainer = connect(

@@ -1,6 +1,7 @@
+//import data from '../../static/dashboardData.json'
 
-export const requestSubredditJson = (subreddit) => ({
-  type: "11",
-  data : []
+export const fetchDashboardData = (data) => ({
+  type: "Dashboard",
+  data : data
 });
-export default  requestSubredditJson ;
+export default  fetchDashboardData ;

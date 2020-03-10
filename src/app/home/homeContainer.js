@@ -1,14 +1,19 @@
 import { connect } from 'react-redux';
 import HomeComponent from './home';
-import {requestSubredditJson} from './dashboardActions'
+import {fetchDashboardData} from './dashboardActions'
 
 const mapStateToProps = state => {
-  return { name :"Anant" }
+  const {title , description} = state
+  return {
+    title : title,
+    description : description
+  }
 };
 
 const mapDispatchToProps = dispatch => {
-  dispatch(requestSubredditJson())
-  return {name : "Anant"}
+  return {
+    fetchDashboardData
+  }
 };
 
 const HomeContainer = connect(

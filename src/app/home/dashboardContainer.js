@@ -4,7 +4,7 @@ import DashboardComponent from './dashboard'
 const mapStateToProps = (state) => {
   const { equipmentList } = state.dasboard;
   return {
-      equipmentList
+      state : state
   }
 }
 

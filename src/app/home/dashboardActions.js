@@ -1,7 +1,5 @@
-//import data from '../../static/dashboardData.json'
+import data from '../../static/dashboardData.json'
 
-export const fetchDashboardData = (data) => ({
-  type: "Dashboard",
-  data : data
+export const  fetchDashboardData = () =>({
+         type: "Dashboard",
 });
-export default  fetchDashboardData ;

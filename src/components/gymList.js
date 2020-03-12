@@ -18,7 +18,7 @@ const GymList = () => {
                         <Accordion.Collapse eventKey="0">
                         <Card.Body>
                         <Card>
-                            <Card.Img variant="top" src="https://www.plusfitness.co.in/media/images/Strength_1.2e16d0ba.fill-1000x600.jpg" />
+                            {/* <Card.Img variant="top" src="https://www.plusfitness.co.in/media/images/Strength_1.2e16d0ba.fill-1000x600.jpg" /> */}
                             <Card.Body>
                             <Card.Title>Best Gyms in NCR</Card.Title>
                             <Card.Text>
@@ -46,7 +46,7 @@ const GymList = () => {
                         <Accordion.Collapse eventKey="0">
                         <Card.Body>
                         <Card>
-                            <Card.Img variant="top" src="https://www.plusfitness.co.in/media/images/Strength_1.2e16d0ba.fill-1000x600.jpg" />
+                            {/* <Card.Img variant="top" src="https://www.plusfitness.co.in/media/images/Strength_1.2e16d0ba.fill-1000x600.jpg" /> */}
                             <Card.Body>
                             <Card.Title>Best Gyms in NCR</Card.Title>
                             <Card.Text>

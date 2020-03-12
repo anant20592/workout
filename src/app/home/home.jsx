@@ -2,9 +2,12 @@ import React from 'react';
 import Header from '../../components/Header'
 import Footer from '../../components/Footer';
 import Dashboard from './dashboard';
-
+import {useEffect} from 'react'
 const Home = (props) => {
-    console.log("props-- " ,props)
+
+    useEffect(() => {
+        props.fetchData()
+    })
     return (
         <div>
             <Header></Header>

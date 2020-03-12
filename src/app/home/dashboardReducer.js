@@ -1,20 +1,21 @@
 import data from '../../static/dashboardData.json'
+import {fromJS} from 'immutable'
 
-const INITIAL_STATE = {
-    count: 0,
-    subreddit: '',
-    showSpinner: false,
-    subredditData: data
-  }
-const dashboardReducer = (state = INITIAL_STATE, action) => {
-    switch(action.type){
-        case "Dashboard":  {
-        return {
-            state,
-            data :  data
-        }
+const dashboardReducer = (
+    state = fromJS({
+      list: [],
+      validation: [],
+      data: {},
+      metadata: {},
+      submittingForm: false,
+    }),
+    action
+  ) => {
+    switch (action.type) {
+        case "Dashboard":
+           return state.setIn(['data'], fromJS(data))
+        default:
+        return state;
     }
-    default : return state
-}
-}
+  };
 export default dashboardReducer
